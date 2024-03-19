@@ -1,0 +1,71 @@
+body{
+    background: #e83f44;    
+}
+main{    
+    background: #8b9cd7;
+}
+.texto-a-cifrar{
+    color: #000000;
+    background: transparent; 
+}
+.centro-relleno-relleno-para-aviso p span{
+    background: rgb(225, 113, 113);
+    color: white;
+}
+.encriptar{    
+    color: #e83f44;
+    background: #0a3871;
+    border:1px solid #0a3871; 
+}
+.encriptar:hover{
+    background: #1e568f;
+}
+.desencriptar{
+    border:1px solid #0a3871;
+    background: #e83f44;
+    color: #0a3871;
+}
+.desencriptar:hover{
+    background: white;
+}
+.derecha{
+    background: white;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.derecha-relleno-relleno-aviso-superior p{    
+    color: #343A40;
+}
+.derecha-relleno-relleno-aviso-inferior p{
+    color: #495057;
+}
+.decifrado{    
+    color: #495057;
+}
+.bcopiar{
+    border: 1px solid #0a3871;
+    color: #0a3871;
+    background: white;
+}
+.bcopiar:hover{
+    background: #d8dfe8;
+}
+footer div{        
+    background: rgba(0, 0, 0,0.0);
+    color:  rgba(255, 255, 255,0.0);  
+}
+footer div p{
+    color: black;    
+}
+.enlace{
+    cursor: pointer;
+}
+footer div:not(.contenedor,.radio_b,.dip):hover{
+    background: rgba(5, 27, 72, 0.5);            
+    color: white;            
+}
+footer div:not(.contenedor,.radio_b,.dip):hover .enlace{
+    content: url(imagenes/github-blanco.png);
+}
+div .footer-texto:hover{
+    color: white;
+}
