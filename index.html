@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="imagenes/Logo.png">
+    <link rel="stylesheet" href="style2.css">
+    <link id="colores-tema" rel="stylesheet" href="original.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+</head>
+
+<body onresize="inicio()">
+    
+    <main id="main" >
+        <div class="fondo-x">
+            <div class="obj1"></div>
+            <img class="obj2">
+            <div class="obj3"></div>
+            <div class="obj4"></div>
+            <div class="obj5"></div>
+            <div class="obj6"></div>
+            <div class="obj7"></div>                
+        </div>
+
+        <div class="main-relleno">
+            
+            <div class="izquierda"><img class="logo" src="imagenes/Logo.png" alt=""></div>
+
+            <div class="centro">
+
+                <div class="centro-relleno">
+
+                    <div class="centro-relleno-relleno-para-texto">
+
+                        <div class="fondo-xb">
+                            <div class="obj1a"></div>
+                        </div>
+
+                        <textarea placeholder="Ingrese el texto aqui" class="texto-a-cifrar" name="acifrar" id="texto-a-encriptar" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="centro-relleno-para-botones">
+                        <div class="fondo-xb">
+                            <div class="obj1b"></div>  
+                        </div>
+
+                        <div class="centro-relleno-relleno-para-aviso">
+                            <p><span>!</span> Solo letras minúsculas y sin acentos.</p>
+                        </div>
+
+                        <div class="centro-relleno-relleno-para-botones">
+                            <button id="idencriptar" onclick="encriptar()" class="encriptar">Encriptar</button><button id="idesencriptar" onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="derecha">
+
+                <div class="derecha-relleno">
+
+                    <div id="id-mensaje" class="derecha-relleno-relleno-muneco-aviso">
+
+                        <div class="derecha-relleno-relleno-muneco">
+                            <div class="fondo-xb">
+                                <div class="obj1c"></div>
+                            </div>
+
+                            <img src="imagenes/Muñeco.png" alt="" class="muneco">
+                        </div>
+
+                        <div class="derecha-relleno-relleno-aviso">
+                            <div class="fondo-xb">
+                            <div class="obj1d"></div>
+                        </div>
+                        
+                        <div class="derecha-relleno-relleno-aviso-superior">
+                            <p>Ningún mensaje fue encontrado</p>
+                        </div>
+                        
+                        <div class="derecha-relleno-relleno-aviso-inferior">
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="id-resultado" class="derecha-relleno-resultado">
+
+                    <div class="derecha-relleno-relleno-para-texto">
+
+                        <div class="fondo-xb">
+                            <div class="obj1e"></div>
+                        </div>
+                        
+                        <textarea class="decifrado" name="decifrado_n" id="texto-resultado" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="derecha-relleno-relleno-para-boton">
+                        <button onclick="copiarAPortapapeles()" id="idcopiar" class="bcopiar">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <footer>
+        <div><p class="footer-texto">Código: Juan Rodriguez.  </p></div>
+        <div class="logo-footer"><a href="https://github.com/Juano40/Desafio-Alura"><img class="enlace" src="imagenes/github.png" alt="github-mark"></a></div>               
+    </footer>
+    <script src="script2.js"></script>    
+</body>
+</html>
