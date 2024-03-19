@@ -1,0 +1,521 @@
+body{
+    margin: 0; 
+    padding: 0;   
+    position: relative;         
+}
+.fondo-x{
+    position: absolute;        
+}
+
+p, span{
+    margin: 0;
+    padding: 0;
+}
+main{    
+    max-width: 1440px;   
+    height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;   
+    min-height: 480px;    
+}
+.main-relleno{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+
+.izquierda, .centro, .derecha{
+    font-family: 'Inter',sans-serif;    
+    display: inline-block;
+    vertical-align: top;
+}
+
+.izquierda{
+    text-align: center;
+    width: 8.8235294%;
+    height: 100%;
+}
+
+.logo{    
+   height: 48px; 
+}
+
+.centro{
+    position: absolute;
+    width: 91.1764706%;     
+    height: 100%;
+    padding: 32px 480px 32px 80px;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+.centro-relleno{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-width: 400px;
+}
+
+.centro-relleno-relleno-para-texto{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 165px;
+    padding-top: 96px;
+    box-sizing: border-box;
+}
+.texto-a-cifrar{
+    width: 100%;
+    height: 100%;
+    padding: 0;    
+    border: none;
+    font-family: inherit;
+    font-size: 2em;
+    resize: none;   
+    background: transparent; 
+}
+.texto-a-cifrar:focus{
+    outline: none;     
+}
+.centro-relleno-para-botones{
+    position: absolute;    
+    width: 100%;
+    height: 101px;
+    bottom: 0;
+}
+
+.centro-relleno-relleno-para-aviso{ 
+    width: 100%;
+    height: 18px;
+    margin-bottom: 16px;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+.centro-relleno-relleno-para-aviso p{
+    font-size: 0.75em;
+}
+.centro-relleno-relleno-para-aviso p span{
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.centro-relleno-relleno-para-botones{ 
+    width: 100%;
+    height: 67px;    
+}
+.encriptar{    
+    width: 48.2352941%;
+    height: 100%;
+    margin-right: 1.7647059%;
+    border-radius: 24px;
+    font-family: inherit;       
+}
+
+.desencriptar{
+    width: 48.2352941%;
+    height: 100%;    
+    margin-left: 1.7647059%;
+    border-radius: 24px;
+    font-family: inherit;
+}
+
+.derecha{
+    position: absolute; 
+    width: 29.4117647%;
+    min-width: 400px; 
+    height: 100%;        
+    padding: 32px;
+    border-radius: 32px;
+    box-sizing: border-box;  
+    right: 0;  
+}
+.derecha-relleno{
+    width: 100%;
+    height: 100%;
+}
+.derecha-relleno-relleno-muneco-aviso{ 
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.derecha-relleno-relleno-muneco{ 
+    width: 100%;
+    height: 58.5227273%;
+    position: relative;
+    min-height: 304px;
+}
+.muneco{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.derecha-relleno-relleno-aviso{ 
+    width: 100%;
+    height: 41.47722727%;
+    padding-top: 32px;
+    box-sizing: border-box;
+    line-height: 48px;
+}
+.derecha-relleno-relleno-aviso-superior{ 
+    width: 100%;
+    height: 58px;
+    padding-bottom: 8px;
+}
+.derecha-relleno-relleno-aviso-superior p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+.derecha-relleno-relleno-aviso-inferior{
+    width: 100%;
+    height: 48px;
+    padding-top: 8px;
+}
+.derecha-relleno-relleno-aviso-inferior p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 24px;    
+}
+
+.derecha-relleno-resultado{    
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.derecha-relleno-relleno-para-texto{    
+    width: 100%;
+    height: 100%;
+    padding: 0 0 99px 0;
+    box-sizing: border-box;
+    
+}
+.decifrado{    
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    font-size: 1.75em;
+    line-height: 36px;
+    resize: none;
+    outline: none;
+}
+.derecha-relleno-relleno-para-boton{
+    position: absolute;
+    width: 100%;
+    height: 67px;
+    bottom: 0;
+}
+.bcopiar{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+footer{      
+    display: block;
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+footer div{  
+    text-align: center;        
+    transition: 370ms;
+    width: 100%;            
+}
+
+footer div p{
+    padding: 10px 0;
+    font-size: 13px;    
+}
+
+footer div a{
+    display: inline-block;    
+    height: 25px;    
+}
+
+.enlace{
+    cursor: pointer;
+    width: 20px;
+}
+
+.contenedor{           
+    position: absolute;
+    display: block;                  
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;   
+    right: 0;      
+}
+.radio_b{    
+    display: inline-block;    
+    position: relative;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    width: 75px;   
+    height: 40px;      
+}
+.radio_b:hover{
+    opacity: 0.7;
+}
+
+input[name="tem_a"]{  
+    position: absolute;
+    opacity: 0;    
+    width: 75px;
+    height: 40px;    
+    padding: 0;
+    margin: 0;     
+    top: 0;   
+    z-index: 10; 
+    cursor: pointer;    
+}
+
+.dip{        
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: block;    
+    width: 75px;
+    height: 40px;    
+    top: 0;    
+    transition: 370ms;             
+}
+
+.radio_b:nth-child(1) div{
+    background: linear-gradient(45deg,#ffffff,#aebcbf, #0a5983);
+}
+.radio_b:nth-child(2) div{
+    background: linear-gradient(45deg,#818181,#696969, #212121);
+}
+.radio_b:nth-child(3) div{
+    background: linear-gradient(45deg,#96c3bb,#2a8fa9, #013b49);
+}
+.radio_b:nth-child(4) div{
+    background: linear-gradient(45deg,#aea5dd,#8152d3, #201148);
+}
+.radio_b input:checked ~ .dip{
+    box-sizing: border-box;
+    border: 7px solid rgb(254, 255, 255);        
+}
+
+
+.cajatip{
+    border-radius: 15px;
+    padding: 15px 3px;    
+    position: absolute;
+    width: 15vw;
+    max-width: 220px;    
+    height: fit-content;
+    background: rgba(74, 89, 96, 0.903);
+    right: 25%;
+    top: 40px;
+    text-align: center;       
+    z-index: 10;
+    border: 1px solid rgb(174, 186, 194);
+}
+.mensajetip{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+.cajapuntos{
+    width: 3em;
+    height: 3em;
+    /* background: lightblue; */
+    position: absolute;
+    top: -2em;
+    right: -2em;
+    z-index: -1;
+    overflow: hidden;
+}
+.flecha{
+    position: absolute;    
+    width: fit-content;
+    height: fit-content;        
+    bottom: -10px;    
+    animation: 1s anima ease-out infinite; 
+}
+.puntos{    
+    border: solid rgb(31, 215, 224);
+    border-width: 5px 5px 0px 0;
+    width: 10px;
+    height: 10px;    
+}
+@keyframes anima{
+    0%{
+        bottom: 0;
+        left: 0;
+    }
+    100%{
+        bottom: 100%;
+        left: 100%;
+    }
+}
+
+
+@media screen and (max-width:1134px) {    
+    .centro{
+        padding: 32px 400px 32px 0px; 
+        min-width: 200px;
+    }
+    .centro-relleno{
+       min-width: 200px; 
+    }
+    .derecha{
+       min-width: 350px;
+    }
+}
+
+@media screen and (max-width:768px) {     
+    nav{
+        top: -40px;
+    }
+    nav:hover{
+        top: 0px;
+    }
+    main{
+        box-sizing: initial;
+        height: fit-content;
+        min-width: 512px;
+    }
+    .main-relleno{
+        position: initial;
+        display: block;
+        height: fit-content;                    
+    }
+    .izquierda, .centro, .derecha{
+        display: block;
+    }
+    .izquierda{
+        height: 51px;
+        width: fit-content;
+        margin-top: 33px;        
+        box-sizing: border-box;
+    }    
+    .logo{
+        height: 51px;
+        width: 31px;        
+    }
+    .centro{
+        position: initial;
+        padding: 20px 0 32px 0;
+        width: 100%;        
+        min-width: auto;
+    }
+    .centro-relleno{
+        min-width: auto; 
+     }
+    .texto-a-cifrar{
+        height: 528px;
+    }  
+    .derecha{
+        position: initial;
+        width: 100%;
+        height: fit-content;        
+        margin-top: 32px;
+        min-width: auto;
+        
+    }
+    .derecha-relleno{
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+    }
+    .derecha-relleno-relleno-muneco-aviso{        
+        padding: 0;
+        margin: 0;
+    }
+    .derecha-relleno-relleno-aviso-superior{
+        height: 29px;        
+    }
+    .derecha-relleno-relleno-aviso-inferior{
+        height: fit-content;
+        
+    }
+    .derecha-relleno-relleno-muneco{
+        display: none;
+    }
+    .derecha-relleno-relleno-aviso{
+        padding: 0;        
+    }
+    .decifrado{
+        height: 180px;
+    }
+    footer{                 
+        padding: 0 40px;       
+        min-width: 512px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    
+    main{
+        padding: 16px 16px 40px;               
+        min-width: 316px;     
+    }    
+    .izquierda{
+        height: 48px;
+        margin-top: 8px;        
+    }
+    .logo{        
+        width: 30px;
+        height: 48px;
+    }
+    .centro{
+        padding-top: 24px;
+    }
+    .centro-relleno-relleno-para-texto{
+        padding-top: 56px;
+        padding-bottom: 251px;
+    }
+    #texto-a-encriptar{
+        height: 235px;        
+    }
+    .centro-relleno-para-botones{ 
+        height: fit-content;                
+    }
+    .centro-relleno-relleno-para-botones{
+        display: block;
+        height: 100%;
+        width: 100%;             
+    }
+    .encriptar{
+        display: block;
+        height: 67px;
+        margin: 0 0 24px 0;
+        width: 100%;                
+    }
+    .desencriptar{
+        display: block;
+        height: 67px;
+        margin: 0;        
+        width: 100%;       
+    }
+    .derecha-relleno-relleno-aviso-superior{
+        height: 58px;
+    }
+    .derecha-relleno-relleno-aviso-inferior{
+        height: 48px;
+    }
+    footer{
+        padding: 0 16px;
+        min-width: 316px;
+    }    
+}
